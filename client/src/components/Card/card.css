@@ -1,0 +1,49 @@
+.card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+  width: 350px;
+  padding: 2rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.card-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.left {
+  font-weight: bold;
+}
+@media (max-width: 748px) {
+  .card {
+    width: 100%;
+  }
+}
+.task-card {
+  flex: 0 1 40rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.task-title {
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+}
+.task-desc {
+  font-weight: 400;
+  font-size: 1.2rem;
+
+  padding: 1rem 0;
+}
+.time {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.time span {
+  font-weight: 400;
+  font-size: 1.5rem;
+}

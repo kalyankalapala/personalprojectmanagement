@@ -1,0 +1,106 @@
+.header-dashboard {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  bottom: 0;
+  background-color: var(--side-background);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  flex-flow: column;
+  padding: 8rem 2rem;
+  width: 30rem;
+}
+
+.header-dashboard .logo {
+  text-transform: uppercase;
+  color: black;
+  font-size: 2.7rem;
+  font-weight: bolder;
+}
+
+.header-dashboard .logo span {
+  text-transform: uppercase;
+  color: var(--orange-light);
+}
+
+.header-dashboard .navbar a {
+  display: block;
+  font-size: 2rem;
+  color: #222;
+  margin: 2rem 0;
+}
+.header-dashboard .navbar p {
+  display: block;
+  font-size: 2rem;
+  color: #222;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+.header-dashboard .navbar a:hover {
+  font-weight: 600;
+}
+.header-dashboard .navbar p:hover {
+  font-weight: 600;
+}
+.header-dashboard .navbar .active::before {
+  content: "-";
+  padding-left: 2rem;
+}
+.header-dashboard .navbar .active {
+  font-weight: 600;
+}
+.header-dashboard .follow a {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0 0.7rem;
+}
+.header-dashboard .follow a:hover {
+  color: var(--main-color);
+}
+#menu-bars {
+  position: fixed;
+  top: 2rem;
+  left: 1rem;
+  z-index: 10000;
+  background-color: var(--orange-light);
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    padding: 0;
+  }
+  #menu-bars {
+    display: initial;
+  }
+  .header-dashboard {
+    left: -120%;
+  }
+  section {
+    padding: 10rem 1rem;
+  }
+  .header-dashboard.active {
+    left: 0%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .header-dashboard {
+    left: -120%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,80 @@
+.login-wrapper {
+  background-color: var(--side-background);
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.form-box {
+  width: 50vw;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 2rem;
+  display: block;
+  margin: 15vh auto;
+}
+.form--header {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.tag--name {
+  color: #b9b9b9;
+  font-size: 1.7rem;
+}
+.form-control {
+  color: #b9b9b9;
+  background-color: #f6f6f6;
+  padding: 2rem 5rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  text-transform: none;
+}
+.icon {
+  font-size: 2rem;
+  min-width: 50px;
+  color: #b9b9b9;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.form-group-auth i {
+  position: absolute;
+}
+.btn-login {
+  width: 100%;
+  background-color: var(--orange-light);
+  padding: 2rem;
+  margin: 3rem 0;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.btn-login:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+p a {
+  text-decoration: none;
+  color: var(--orange-light);
+  font-size: 1.5rem;
+}
+.form span {
+  color: red;
+  margin: -1rem 1rem;
+  font-size: 1rem;
+  display: none;
+  text-transform: none;
+}
+
+.form-group-auth input:invalid[focussed="true"] ~ span {
+  display: inline-block;
+}
+@media (max-width: 661px) {
+  .form-box {
+    width: 80vw;
+  }
+}

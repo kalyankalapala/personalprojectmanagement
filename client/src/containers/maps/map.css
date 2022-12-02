@@ -1,0 +1,92 @@
+.project {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  background-color: azure;
+  padding: 2rem;
+}
+
+.project img {
+  max-width: 100px;
+}
+.details {
+  flex: 0 1 70rem;
+}
+.details h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.details p {
+  font-size: 1.5rem;
+}
+.top-helpers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.search input {
+  border: 1px solid var(--orange-light);
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.7rem 0.2rem;
+  text-transform: none;
+  margin-bottom: 1rem;
+}
+.container-tasks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-transform: none;
+  font-size: 1.5rem;
+}
+.form-group label {
+  padding: 0.5rem 0;
+  font-weight: 700;
+}
+.form-group input,
+.form-group textarea {
+  border-bottom: 1px solid var(--orange-light);
+  width: 100%;
+  padding: 0.4rem 0.5rem;
+  text-transform: none;
+  font-size: 1.7rem;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  padding: 1.7rem;
+}
+.form-group span {
+  color: red;
+  display: none;
+  padding: 0.5rem 0;
+  text-transform: none;
+}
+.form-group input:invalid ~ span {
+  display: initial;
+}
+.middle {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 10vh;
+}
